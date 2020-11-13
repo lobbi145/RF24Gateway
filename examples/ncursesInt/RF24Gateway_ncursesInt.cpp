@@ -101,8 +101,8 @@ void intHandler(){
 
 int main() {	
   
-  gw.begin(nodeID);
-  //mesh.setStaticAddress(8,1);
+  gw.begin(nodeID,7);
+  //mesh.setStaticAddress(13,05);
 
   //uint8_t nodeID = 22;
   //gw.begin(nodeID,3,RF24_2MBPS);
@@ -139,9 +139,9 @@ int main() {
   
 
   //MANUAL IP
-  //char ip[] = "10.10.3.1";
-  //char subnet[] = "255.255.255.0";
-  //gw.setIP(ip,subnet);
+  char ip[] = "10.10.3.33";
+  char subnet[] = "255.255.255.0";
+  gw.setIP(ip,subnet);
 
   drawMain();
   
